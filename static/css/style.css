@@ -91,8 +91,8 @@ a, button.submit {
     -o-transition:all .1s ease-in;
     transition:all .1s ease-in;
 }
-a:hover, a:active {
-    color:#6E7173;
+a, a:hover, a:active {
+    color:#2ca6cb;
 }
 mark {
     padding: 3px 3px 3px 5px;
@@ -177,33 +177,30 @@ textarea {
     border-bottom-color:transparent;
 }
 #header {
-    padding:58px 0 0;
+    padding:30px 0 0;
     text-align:left;
+    background: #2ca6cb;
 }
-#header .col-group {
-    border-bottom: 1px solid #ddd;
-}
+
 .site-name h1{
     padding: 0;
     margin:0;
 }
 #logo {
-    /**
-    font:bold 42px/1.12 "Times New Roman", Georgia, Times, sans-serif;
-    **/
-    font-size: 37.5px;
-    font-weight: bold;
-    color:#555;
+    font-size: 42px;
+    font-weight: normal;
+    color:#fff;
 }
 #logo span {
-    color:#777;
+    color:#fff;
 }
 #logo:hover {
-    color:#777;
+    color:#fff;
 }
 .description {
-    margin:5px 0 0;
-    color:#999;
+    margin:20px 0 0;
+    font-size: 18px;
+    color:#fff;
 }
 #nav-menu {
     margin:10px 0 -1px;
@@ -213,20 +210,20 @@ textarea {
 #nav-menu a {
     display:inline-block;
     margin-right:-1px;
+    margin-bottom: 25px;
     padding:0 1em;
     height:32px;
     line-height:32px;
-    color:#444;
+    font-size: 18px;
+    color:#fff;
 }
 #nav-menu a:first-child {
     border:none;
 }
 #nav-menu a:hover {
+
 }
-#nav-menu a.current {
-    border:1px solid #ddd;
-    border-bottom:1px solid #fff;
-}
+
 .site-search {
     display:none;
 }
@@ -258,9 +255,19 @@ textarea {
     width: 100%;
 }
 .container {
-    width:1150px;
+    width:1200px;
+    padding:0 10px;
+    margin:0 auto;
+}
+.container-header {
+    width:100%;
     padding:0 60px;
     margin:0 auto;
+}
+.container-footer {
+    padding:0 10px;
+    margin:0 auto;
+    text-align: center;
 }
 #secondary {
     float:right;
@@ -607,9 +614,10 @@ textarea.textarea {
     padding: 5px; 
 }
 #footer {
-    padding:.8em 0 3.6em;
+    padding:.8em 0 0.6em;
     line-height:1.5;
-    color:#999;
+    color:#fff;
+    background: #1f1f1f;
 }
 .error-page {
     margin-top:100px;
