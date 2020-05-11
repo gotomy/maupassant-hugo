@@ -1,4 +1,4 @@
-{{ $related := .Site.RegularPages.Related . | first 5 }}
+<!-- {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 <div class="post-archive">
     <h2>See Also</h2>
@@ -8,4 +8,33 @@
         {{ end }}
     </ul>
 </div>
-{{ end }}
+{{ end }} -->
+
+<!-- <div>
+    {{with .Prev}}
+    <a href="{{.Permalink}}">前一页</a> 
+    {{end}}
+    {{with .Next}}
+    <a href="{{.Permalink}}">后一页</a>
+    {{end}}
+</div> -->
+
+
+<nav class="article-nav clearfix">
+    {{with .Prev}}
+    <div class="prev">
+        <a href="{{.Permalink}}" title="{{ .Title}}">
+        <strong>上一篇：</strong><br>
+        <span>        {{ .Title}}</span>
+    </a>
+   </div>
+   {{end}}
+   {{with .Next}}
+   <div class="next">
+    <a href="{{.Permalink}}" title="{{ .Title}}">
+        <strong>下一篇：</strong><br> 
+        <span>{{ .Title}}        </span>
+    </a>
+   </div>
+   {{end}}
+</nav>

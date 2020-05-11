@@ -27,7 +27,7 @@
     .post-toc .post-toc-title {
         width: 100%;
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
         text-align: center;
@@ -60,7 +60,7 @@
         }
     }
 </style>
-<div class="post-toc" style="position: absolute; top: 188px;">
+<div class="post-toc" style="position: absolute; top: 200px;">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
         {{.TableOfContents}}
@@ -75,7 +75,7 @@
                 postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
             }
 
-            var t = postToc.offset().top - 20,
+            var t = postToc.offset().top,
                 a = {
                     start: {
                         position: "absolute",
