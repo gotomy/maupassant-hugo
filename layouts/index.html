@@ -30,7 +30,7 @@
                     {{ with .Params.Tags }}
                     <div class="post-meta">
                         {{ range . }}
-                        <span class="meta-category"></span><a href='{{ "/categories/" | absLangURL }}{{ . | urlize }}'>{{ . }}</a></span>
+                        <span class="meta-category"></span><a href='{{ "/tags/" | absLangURL }}{{ . | urlize }}'>{{ . }}</a></span>
                         {{ end }}
                     </div>
                     {{ end }}
